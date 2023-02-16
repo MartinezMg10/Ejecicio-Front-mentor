@@ -120,6 +120,12 @@ body{
 
 .parrafo_none{display: none
 }
+
+footer{
+    position: fixed;
+    top: 98%;
+}
+
 @media screen and (min-width: 376px) {
 
 
@@ -220,4 +226,4 @@ body{
     }
 }
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: white; }
