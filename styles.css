@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Violet);
+}
+
+.bg_desktop{
+    display: none;
+}
+
+.logo_img{
+    position:absolute;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.background_img{
+    position:absolute;
+}
+
+.img_principal{
+    width: 375px;
+    position: absolute;
+}
+
+.img_principal img{
+    width: 375px;
+    position: absolute;
+    padding: 120px 35px 0;
+
+}
+
+.contenedor_principal{
+    position: fixed;
+    top:50%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding: 0 35px 0 35px;
+}
+
+.contenedor_principal h2{
+    padding-bottom: 20px;
+    font-size: 1.4em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor_principal p{
+    padding-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor_principal button{
+    width: 60%;
+    height: 40px;
+    border-radius:20px;
+    border-style: none;
+    color: var(--Violet);
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor_principal button:hover{
+    color: white;
+    background-color: var(--SoftMagenta);
+}
+
+.icons svg:hover{
+    fill: var(--SoftMagenta);
+}
+
+.container_icon:hover{
+    border: 1px solid var(--SoftMagenta);
+}
+
+.icons{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 90%;
+    width: 100%;
+    height: 100px;
+    color: white;
+    margin: 0 auto;
+}
+
+.icons svg{
+    width: 15px;
+    height: 15px;
+    fill: white;
+}
+
+.container_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.parrafo_none{display: none
+}
+@media screen and (min-width: 376px) {
+
+
+    .logo_img{
+        position:absolute;
+        margin-left: 60px;
+        padding-left: 0;
+        padding-top: 40px;
+        height: 150px;
+    }
+
+    .background_img{
+        display: none;
+    }
+
+    .bg_desktop{
+        display: block;
+        position: absolute;
+
+    }
+
+    .img_principal{
+        position: relative;
+    }
+
+    .img_principal img{
+        margin-top: 190px;
+        width: 720px;
+        height: 510px;
+        position: relative;
+        padding:0;
+        margin-left: 60px;
+    }
+
+    .contenedor_principal{
+        position: fixed;
+        top:28%;
+        left: 55%;
+        text-align: left;
+        color: white;
+        margin: 0 auto;
+        padding: 0 35px 0 35px;
+    }
+
+    .contenedor_principal h2{
+        padding-bottom: 20px;
+        font-size: 2.5em;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .contenedor_principal p{
+    padding-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    }
+
+    .parrafo_inline{
+        display: none;
+    }
+
+    .contenedor_principal button{
+        width: 35%;
+        height: 60px;
+        border-radius:30px;
+        border-style: none;
+        color: var(--Violet);
+        font-size: 1.3em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .parrafo_none{
+        display: block;
+    }
+
+    .icons{
+        top: 83%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-right: 80px;
+    }
+
+    .icons svg{
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+
+    .container_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-left: 15px;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
